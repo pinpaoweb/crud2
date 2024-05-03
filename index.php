@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="publico/estilos.css">
+
 <?php
 require_once 'configuracion/conexion.php';
 require_once 'controladores/ProductoControlador.php';
@@ -21,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
             if (isset($_GET['id'])) {
                 $controladorProducto->eliminarProducto($_GET['id']);
             }
-            break;
+            break; 
     }
 
     $controladorProducto->mostrarProductos();

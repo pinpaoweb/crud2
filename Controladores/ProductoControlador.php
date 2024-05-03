@@ -63,7 +63,7 @@ class ProductoControlador {
     // Controlador para eliminar producto por su ID
     public function eliminarProducto(int $id): void {
         $exito = $this->modeloProducto->eliminarProducto($id);
-        if ($exito) {
+        if ($exito) { 
             header("Location: index.php");
             exit();
         } else {
