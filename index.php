@@ -17,6 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
                 $controladorProducto->mostrarFormularioActualizarProducto($_GET['id']);
             }
             break;
+        case 'eliminarProducto':
+            if (isset($_GET['id'])) {
+                $controladorProducto->eliminarProducto($_GET['id']);
+            }
+            break;
     }
 
     $controladorProducto->mostrarProductos();
