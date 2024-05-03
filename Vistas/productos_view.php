@@ -17,6 +17,7 @@
                 <th>Nombre</th>
                 <th>Stock</th>
                 <th>Precio</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +27,9 @@
                     <td><?= $producto['nombre'] ?></td>
                     <td><?= $producto['stock'] ?></td>
                     <td><?= $producto['precio'] ?></td>
+                    <td>
+                        <a href="index.php?accion=modalActualizar&id=<?= $producto['id'] ?>">✏️</a>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

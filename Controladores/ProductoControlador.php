@@ -37,7 +37,28 @@ class ProductoControlador {
         }
     }
 
-
+    // Controlador para Mostrar formulario, con UN producto por SU ID
+    public function mostrarFormularioActualizarProducto(int $id): void {
+        $producto = $this->modeloProducto->obtenerProductoPorId($id);
+        include './Vistas/modalactualizarproducto.php';
+    }
+    
+    // Controlador para Actualizar producto por su ID
+    public function actualizarProducto(): void {
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $id = $_POST['id'];
+            $nombre = $_POST['nombre'];
+            $stock = $_POST['stock'];
+            $precio = $_POST['precio'];
+            $exito = $this->modeloProducto->actualizarProducto($id, $nombre, $stock, $precio);
+            if ($exito) {
+                header("Location: index.php");
+                exit();
+            } else {
+                exit("Error al actualizar el producto");
+            }
+        }
+    }
 
 }
 ?>
