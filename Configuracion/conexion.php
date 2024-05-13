@@ -1,7 +1,7 @@
 <?php
 
 // Configuración de la conexión a la base de datos
-$dsn = 'mysql:host=localhost;port=3307;dbname=hulk';
+$dsn = 'mysql:host=localhost;port=3306;dbname=hulk';
 $username = 'root';
 $password = '';
 
@@ -13,7 +13,7 @@ try {
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Mensaje de conexión exitosa (opcional)
-    echo "Conexión exitosa";
+  //  echo "Conexión exitosa";
 } catch (PDOException $e) {
     // Manejo de excepciones: mostrar mensaje de error
     echo "Error de conexión: " . $e->getMessage();

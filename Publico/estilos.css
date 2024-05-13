@@ -29,3 +29,31 @@
     color: #333;
     font-weight: bold;
 }
+
+/* Estilos para resaltar la fila al pasar el cursor */
+.table tr:hover {
+    background-color: #add8e6; /* Azul claro */
+}
+
+/* Estilos para resaltar la fila al hacer clic */
+.table tr.clicked {
+    background-color: #6495ed; /* Azul más oscuro */
+}
+
+/* Estilos para el botón de cerrar del modal */
+.modal .close {
+    color: #ff0000; /* Color rojo para la X */
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: #cc0000; /* Color rojo más oscuro al pasar el mouse */
+}
+
+/* Estilos para el botón de agregar */
+.agregar {
+    color: green;
+}

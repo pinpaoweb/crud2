@@ -1,5 +1,5 @@
 <?php
-print("<br>Controlador<br>");
+//print("<br>Controlador<br>");
 
 require_once './modelos/ProductoModelo.php';
 

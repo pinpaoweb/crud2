@@ -1,5 +1,5 @@
 <?php
-print("Modelo");
+//print("Modelo");
 class ProductoModelo {
     private PDO $conexion;
 
